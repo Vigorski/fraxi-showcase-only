@@ -1,0 +1,54 @@
+// COLOR GENERATOR
+@each $name, $color in ($colors) {
+  .text-#{$name} {
+    color: $color;
+  }
+
+  .fill-#{$name} {
+    fill: $color;
+  }
+}
+
+// MANUAL TEXT COLORS
+p {
+  font: 400 1rem $font-montserrat;
+  line-height: calc-rem(32px);
+  color: $color-black;
+
+  @include media-breakpoint-down(md) {
+    font-size: calc-rem(14px);
+    line-height: calc-rem(26px);
+  }
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+// TEXT SIZES
+.text {
+  &-xxs {
+    font-size: calc-rem(10px);
+    line-height: calc-rem(12px);
+  }
+
+  &-xxs {
+    font-size: calc-rem(12px);
+    line-height: calc-rem(16px);
+  }
+
+  &-sm {
+    font-size: calc-rem(14px);
+    line-height: calc-rem(18px);
+  }
+}

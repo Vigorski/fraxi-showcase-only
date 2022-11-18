@@ -1,0 +1,80 @@
+.profile {
+	@extend %background-pseudo-text;
+
+	&__edit {
+		position: absolute;
+		right: calc-rem(10px);
+		top: calc-rem(56px);
+
+		.svg-inline {
+			fill: $color-primary;
+		}
+	}
+
+	&__img {
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: calc-rem(130px);
+		height: calc-rem(130px);
+		background-color: $color-gray-2;
+		border-radius: $border-radius-md;
+		box-shadow: calc-rem(-9px) calc-rem(9px) calc-rem(14px) rgb(36, 40, 55);
+		overflow: hidden;
+		cursor: pointer;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&__file {
+		&-input {
+			display: none;
+		}
+
+		&-change {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+			padding: calc-rem(10px) 0;
+			background-color: rgba($color-light-gray-2, 40%);
+			font-weight: 700;
+			font-size: calc-rem(12px);
+			line-height: 1;
+			color: $color-white;
+		}
+	}
+
+	&__svg-wrapper {
+		padding: calc-rem(20px);
+		height: 100%;
+
+		.svg-inline {
+			height: 100%;
+			width: 100%;
+			fill: rgba($color-black, .4);
+		}
+	}
+
+  &__name {
+    color: $color-white;
+    margin: calc-rem(16px) 0;
+    text-align: center;
+  }
+
+	&__routes {
+		dt {
+			font-size: calc-rem(12px);
+			font-weight: 400;
+			margin-bottom: 0;
+		}
+
+		dd {
+			font-size: calc-rem(20px);
+			font-weight: 700;
+			margin-top: calc-rem(4px);
+		}
+	}
+}

@@ -1,0 +1,18 @@
+.Toastify {
+  &__toast-theme--colored,
+  &__toast--default,
+  &__toast-theme--light {
+    --toastify-icon-color-success: #{$color-green-2};
+    --toastify-text-color-light: #{$color-gray};
+  }
+
+  &__close-button {
+    align-self: center;
+    margin-right: calc-rem(8px);
+
+    > svg {
+      height: calc-rem(20px);
+      width: calc-rem(20px);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+h1 {
+    font: 700 calc-rem(60px) $font-montserrat;
+    letter-spacing: -0.88px;
+    line-height: calc-rem(64px);
+
+    &.h1-sm {
+        font-size: calc-rem(22px);
+        line-height: calc-rem(26px);
+    }
+}
+
+h2 {
+    font: 500 calc-rem(32px) $font-montserrat;
+    letter-spacing: -0.47px;
+    line-height: calc-rem(40px);
+
+    &.h2-sm {
+        font-size: calc-rem(20px);
+        line-height: calc-rem(24px);
+    }
+}
+
+h3 {
+    font: 500 calc-rem(26px) $font-montserrat;
+    letter-spacing: -0.38px;
+    line-height: calc-rem(32px);
+}
+
+h4 {
+    font: 700 calc-rem(22px) $font-montserrat;
+    letter-spacing: -0.32px;
+    line-height: calc-rem(48px);
+}
+
+h5 {
+    font: 500 calc-rem(18px) $font-montserrat;
+    letter-spacing: -0.13px;
+    line-height: calc-rem(32px);
+}
+
+h6 {
+    font: 600 calc-rem(14px) $font-montserrat;
+    line-height: calc-rem(18px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-white;
+}

@@ -1,0 +1,16 @@
+.card__ride {
+  p {
+    font: 700 calc-rem(10px) $font-lato;
+    line-height: calc-rem(12px);
+    color: $color-white;
+    margin-top: calc-rem(14px);
+  }
+
+  &-info h6 {
+    margin-top: calc-rem(6px);
+  }
+
+  &-price h6 {
+    text-transform: uppercase;
+  }
+}
